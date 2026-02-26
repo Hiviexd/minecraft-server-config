@@ -15,6 +15,10 @@ services:
             SIMULATION_DISTANCE: "6"
             SEED: "888880777356331877"
 
+            PLUGINS: |
+                https://hangarcdn.papermc.io/plugins/SRTeam/SkinsRestorer/versions/15.10.0/PAPER/SkinsRestorer.jar
+                https://hangarcdn.papermc.io/plugins/UNTONE/DiscordWebhookJoinLeave/versions/1.2.2/PAPER/DiscordJoinLeaveMessages-1.2.2-SNAPSHOT.jar
+
             ENABLE_AUTOPAUSE: "TRUE"
             AUTOPAUSE_TIMEOUT_EST: "300"
             AUTOPAUSE_TIMEOUT_INIT: "600"
