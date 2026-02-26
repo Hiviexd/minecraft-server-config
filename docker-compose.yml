@@ -8,16 +8,20 @@ services:
             EULA: "TRUE"
             TYPE: "PAPER"
             VERSION: "1.21.8"
-            MOTD: "Adouma Mibouna"
             MEMORY: "4G"
             ONLINE_MODE: "FALSE"
-            VIEW_DISTANCE: "8"
-            SIMULATION_DISTANCE: "6"
+
             SEED: "888880777356331877"
+            DIFFICULTY: "hard"
+
+            MOTD: "Adouma \u00A7lMibouna\u00A7r"
+            ICON: "https://nats.are-la.me/7qfYVxa.png"
 
             PLUGINS: |
                 https://hangarcdn.papermc.io/plugins/SRTeam/SkinsRestorer/versions/15.10.0/PAPER/SkinsRestorer.jar
                 https://hangarcdn.papermc.io/plugins/UNTONE/DiscordWebhookJoinLeave/versions/1.2.2/PAPER/DiscordJoinLeaveMessages-1.2.2-SNAPSHOT.jar
+                https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.7.1/PAPER/ViaVersion-5.7.1.jar
+                https://hangarcdn.papermc.io/plugins/ViaVersion/ViaBackwards/versions/5.7.1/PAPER/ViaBackwards-5.7.1.jar
 
             ENABLE_AUTOPAUSE: "TRUE"
             AUTOPAUSE_TIMEOUT_EST: "300"
