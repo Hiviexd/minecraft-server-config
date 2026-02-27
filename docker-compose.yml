@@ -11,10 +11,11 @@ services:
             MEMORY: "4G"
             ONLINE_MODE: "FALSE"
 
-            SEED: "888880777356331877"
+            SEED: "77086492"
             DIFFICULTY: "hard"
+            SPAWN_PROTECTION: "0"
 
-            MOTD: "Adouma \u00A7lMibouna\u00A7r"
+            MOTD: "Adouma \u00A7d\u00A7l\u00A7k*\u00A7rMibounaaaa\u00A7k*\u00A7r\u00A7r\u00A7r"
             ICON: "https://nats.are-la.me/7qfYVxa.png"
 
             PLUGINS: |
