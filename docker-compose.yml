@@ -15,7 +15,7 @@ services:
             DIFFICULTY: "hard"
             SPAWN_PROTECTION: "0"
 
-            MOTD: "Adouma \u00A7d\u00A7l\u00A7k*\u00A7rMibounaaaa\u00A7k*\u00A7r\u00A7r\u00A7r"
+            MOTD: "§c§kd§r§r Adoumaaaa §c§kd§r§r§c §r§dMibounaaaa §r§c§kd§r§r"
             ICON: "https://nats.are-la.me/7qfYVxa.png"
 
             PLUGINS: |
@@ -23,6 +23,8 @@ services:
                 https://hangarcdn.papermc.io/plugins/UNTONE/DiscordWebhookJoinLeave/versions/1.2.2/PAPER/DiscordJoinLeaveMessages-1.2.2-SNAPSHOT.jar
                 https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.7.1/PAPER/ViaVersion-5.7.1.jar
                 https://hangarcdn.papermc.io/plugins/ViaVersion/ViaBackwards/versions/5.7.1/PAPER/ViaBackwards-5.7.1.jar
+                https://hangarcdn.papermc.io/plugins/DestenyLP/VeinMiner/versions/2.1/PAPER/VeinMiner-2.1.jar
+                https://hangarcdn.papermc.io/plugins/CyntrixAlgorithm/DeathChest/versions/2.2.9/PAPER/deathchest.jar
 
             ENABLE_AUTOPAUSE: "TRUE"
             AUTOPAUSE_TIMEOUT_EST: "300"
