@@ -19,6 +19,7 @@ services:
             ICON: "https://nats.are-la.me/7qfYVxa.png"
 
             PLUGINS: |
+                https://download.luckperms.net/1624/bukkit/loader/LuckPerms-Bukkit-5.5.36.jar
                 https://hangarcdn.papermc.io/plugins/SRTeam/SkinsRestorer/versions/15.10.0/PAPER/SkinsRestorer.jar
                 https://hangarcdn.papermc.io/plugins/UNTONE/DiscordWebhookJoinLeave/versions/1.2.2/PAPER/DiscordJoinLeaveMessages-1.2.2-SNAPSHOT.jar
                 https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.7.1/PAPER/ViaVersion-5.7.1.jar
