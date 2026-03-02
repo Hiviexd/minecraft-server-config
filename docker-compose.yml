@@ -27,9 +27,10 @@ services:
                 https://hangarcdn.papermc.io/plugins/DestenyLP/VeinMiner/versions/2.1/PAPER/VeinMiner-2.1.jar
                 https://hangarcdn.papermc.io/plugins/CyntrixAlgorithm/DeathChest/versions/2.2.9/PAPER/deathchest.jar
                 https://hangarcdn.papermc.io/plugins/Atri/Waystones/versions/2.1.4-1.21.11/PAPER/waystones-2.1.4-1.21.11.jar
-                https://release-assets.githubusercontent.com/github-production-release-asset/657713780/8a2afd0f-fa70-46d6-ba8a-7d70d6bcdfb2?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-03-02T20%3A54%3A19Z&rscd=attachment%3B+filename%3DKeepEnchant-1.2.1.jar&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-03-02T19%3A53%3A26Z&ske=2026-03-02T20%3A54%3A19Z&sks=b&skv=2018-11-09&sig=qxjzVKc0HwFcUtfCH6h0az%2FRxMG2otE300mXPtcBCZo%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3MjQ4MjUwMywibmJmIjoxNzcyNDgyMjAzLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-M1bGcIC7bd_2TaJwc_3JQ48px1dkD9BUttTn3SyhE4&response-content-disposition=attachment%3B%20filename%3DKeepEnchant-1.2.1.jar&response-content-type=application%2Foctet-stream
+                https://nats.are-la.me/5MsRSCD.jar
                 https://hangarcdn.papermc.io/plugins/hope61/ElytraFusion/versions/1.5/PAPER/ElytraFusion-1.5-all.jar
 
+            # https://nats.are-la.me/5MsRSCD.jar = KeepEnchant
             ENABLE_AUTOPAUSE: "TRUE"
             AUTOPAUSE_TIMEOUT_EST: "300"
             AUTOPAUSE_TIMEOUT_INIT: "600"
