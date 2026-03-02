@@ -26,6 +26,7 @@ services:
                 https://hangarcdn.papermc.io/plugins/ViaVersion/ViaBackwards/versions/5.7.1/PAPER/ViaBackwards-5.7.1.jar
                 https://hangarcdn.papermc.io/plugins/DestenyLP/VeinMiner/versions/2.1/PAPER/VeinMiner-2.1.jar
                 https://hangarcdn.papermc.io/plugins/CyntrixAlgorithm/DeathChest/versions/2.2.9/PAPER/deathchest.jar
+                https://hangarcdn.papermc.io/plugins/Atri/Waystones/versions/2.1.4-1.21.11/PAPER/waystones-2.1.4-1.21.11.jar
 
             ENABLE_AUTOPAUSE: "TRUE"
             AUTOPAUSE_TIMEOUT_EST: "300"
