@@ -29,6 +29,8 @@ services:
                 https://hangarcdn.papermc.io/plugins/Atri/Waystones/versions/2.1.4-1.21.11/PAPER/waystones-2.1.4-1.21.11.jar
                 https://nats.are-la.me/5MsRSCD.jar
                 https://hangarcdn.papermc.io/plugins/hope61/ElytraFusion/versions/1.5/PAPER/ElytraFusion-1.5-all.jar
+                https://ci.athion.net/job/FastAsyncWorldEdit/1283/artifact/artifacts/FastAsyncWorldEdit-Paper-2.15.1-SNAPSHOT-1283.jar
+                https://hangarcdn.papermc.io/plugins/MrMicky/WorldEditSelectionVisualizer/versions/2.1.9/PAPER/WorldEditSelectionVisualizer-2.1.9.jar
 
             # https://nats.are-la.me/5MsRSCD.jar = KeepEnchant
             ENABLE_AUTOPAUSE: "TRUE"
