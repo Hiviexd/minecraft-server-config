@@ -7,7 +7,7 @@ services:
         environment:
             EULA: "TRUE"
             TYPE: "PAPER"
-            VERSION: "1.21.8"
+            VERSION: "1.21.11"
             MEMORY: "4G"
             ONLINE_MODE: "FALSE"
 
@@ -18,11 +18,13 @@ services:
             MOTD: "§c§kd§r§r Adoumaaaa §c§kd§r§r§c §r§dMibounaaaa §r§c§kd§r§r"
             ICON: "https://nats.are-la.me/7qfYVxa.png"
 
+            RCON_PASSWORD_FILE: /run/secrets/rcon_pass
+
             PLUGINS: |
                 https://download.luckperms.net/1624/bukkit/loader/LuckPerms-Bukkit-5.5.36.jar
                 https://hangarcdn.papermc.io/plugins/SRTeam/SkinsRestorer/versions/15.10.0/PAPER/SkinsRestorer.jar
                 https://hangarcdn.papermc.io/plugins/UNTONE/DiscordWebhookJoinLeave/versions/1.2.2/PAPER/DiscordJoinLeaveMessages-1.2.2-SNAPSHOT.jar
-                https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.7.1/PAPER/ViaVersion-5.7.1.jar
+                https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.7.2/PAPER/ViaVersion-5.7.2.jar
                 https://hangarcdn.papermc.io/plugins/ViaVersion/ViaBackwards/versions/5.7.1/PAPER/ViaBackwards-5.7.1.jar
                 https://hangarcdn.papermc.io/plugins/DestenyLP/VeinMiner/versions/2.1/PAPER/VeinMiner-2.1.jar
                 https://hangarcdn.papermc.io/plugins/CyntrixAlgorithm/DeathChest/versions/2.2.9/PAPER/deathchest.jar
@@ -38,8 +40,40 @@ services:
             AUTOPAUSE_TIMEOUT_INIT: "600"
             AUTOPAUSE_PERIOD: "10"
 
-            OPS: "Hivie_"
+            OPS_FILE: /run/secrets/ops
+            WHITELIST_FILE: /run/secrets/whitelist
 
         volumes:
             - ./data:/data
+        secrets:
+            - whitelist
+            - ops
+            - rcon_pass
         restart: unless-stopped
+
+    backup:
+        image: itzg/mc-backup
+        container_name: mc-backup
+        environment:
+            RCON_HOST: minecraft
+            RCON_PASSWORD_FILE: /run/secrets/rcon_pass
+            INITIAL_DELAY: "2m"
+            BACKUP_INTERVAL: "12h"
+            PRUNE_BACKUPS_DAYS: 7
+            BACKUP_METHOD: "tar"
+        volumes:
+            - ./data:/data:ro
+            - ./backups:/backups
+        depends_on:
+            - minecraft
+        secrets:
+            - rcon_pass
+        restart: unless-stopped
+
+secrets:
+    whitelist:
+        file: ./whitelist.json
+    ops:
+        file: ./ops.json
+    rcon_pass:
+        file: ./rcon_password

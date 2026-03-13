@@ -1,1 +1,6 @@
 data/*
+.env
+rcon_password
+whitelist.json
+ops.json
+backups/*
